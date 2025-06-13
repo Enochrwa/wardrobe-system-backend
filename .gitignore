@@ -1,0 +1,12 @@
+.venv
+.*venv
+.env
+.env.example
+.env.production
+venv/
+backend/.env
+*.py[cod]
+__pycache__/
+*.pyo
+*.pyd
+backend/*env

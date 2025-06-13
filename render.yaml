@@ -1,0 +1,15 @@
+# Render.com Deployment Configuration
+# This file configures the build and deployment settings for Render.com
+
+# Build settings
+buildCommand = "pip install -r requirements.txt"
+startCommand = "python main.py"
+
+# Service settings
+[env]
+PYTHON_VERSION = "3.11"
+
+# Health check
+[healthCheck]
+path = "/"
+
