@@ -5,9 +5,9 @@ from pydantic import BaseModel
 from typing import Optional
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
-from . import schemas
+from . import tables as schemas
 from .db.database import SessionLocal, get_db # Import SessionLocal and get_db
-from . import models # Import your SQLAlchemy models
+from . import model as models # Import your SQLAlchemy models
 from sqlalchemy.orm import Session # Import Session for type hinting
 from dotenv import load_dotenv # For SECRET_KEY
 import os # For SECRET_KEY
